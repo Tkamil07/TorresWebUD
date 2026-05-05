@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+<h:head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	 <link rel="stylesheet" type="text/css" href="#{request.contextPath}/CSS/estilos.css"/>
+    <title>Administrador - Aspirantes UD</title>
+</h:head>
+<h:body>
+    <h2>Todos los Aspirantes Registrados (Vista Administrador)</h2>
+
+    <h:form id="formAdmin">
+        <h:dataTable value="#{admin.todosAspirantes}" var="a" 
+                     varStatus="st" border="1" style="width:100%">
+            <h:column>
+                <f:facet name="header">N°</f:facet>
+                #{st.index + 1}
+            </h:column>
+            <h:column>
+                <f:facet name="header">Fecha Registro</f:facet>
+                #{a.fecha_reg}
+            </h:column>
+            <h:column>
+                <f:facet name="header">Identificación</f:facet>
+                #{a.id_p}
+            </h:column>
+            <h:column>
+                <f:facet name="header">Nombres</f:facet>
+                #{a.nombres}
+            </h:column>
+            <h:column>
+                <f:facet name="header">Apellidos</f:facet>
+                #{a.apellidos}
+            </h:column>
+            <h:column>
+                <f:facet name="header">Teléfono</f:facet>
+                #{a.telefono}
+            </h:column>
+            <h:column>
+                <f:facet name="header">Correo</f:facet>
+                #{a.correo}
+            </h:column>
+            <h:column>
+                <f:facet name="header">Programa Académico</f:facet>
+                #{a.pro_acad.nombre_prog}
+            </h:column>
+        </h:dataTable>
+
+        <br/>
+        <h:link outcome="index" value="← Volver al registro"/>
+    </h:form>
+
+    <footer>
+        <br/><br/>
+        <h4>Cristian Camilo Torres Huertas - cctorresh@udistrital.edu.co - 2026</h4>
+    </footer>
+</h:body>
+</html>

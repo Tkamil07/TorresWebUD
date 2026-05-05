@@ -1,0 +1,143 @@
+/* Tipografía moderna y fondo suave */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;display=swap');
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    margin: 0;
+    padding: 30px 40px;
+    background-color: #f4f6f9;
+    color: #1e293b;
+    line-height: 1.5;
+}
+
+h2, h3 {
+    color: #0f172a;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 12px;
+    margin-top: 0;
+}
+
+/* Formularios */
+label {
+    font-weight: 500;
+    display: inline-block;
+    width: 160px;
+    margin-bottom: 8px;
+    color: #334155;
+}
+
+input, select {
+    padding: 8px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    width: 260px;
+    font-size: 14px;
+    background-color: white;
+    transition: border-color 0.15s ease, box-shadow 0.15s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+input:focus, select:focus {
+    border-color: #3b82f6;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+/* Botones */
+button, input[type="submit"], .btn {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    padding: 10px 24px;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.15s ease;
+    font-family: 'Inter', sans-serif;
+}
+
+button:hover, input[type="submit"]:hover {
+    background-color: #1d4ed8;
+}
+
+/* Tablas */
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    margin: 20px 0;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.03);
+    border: 1px solid #e2e8f0;
+}
+
+th {
+    background-color: #f8fafc;
+    color: #1e293b;
+    padding: 14px 12px;
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #e2e8f0;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+}
+
+td {
+    padding: 12px;
+    border-bottom: 1px solid #f1f5f9;
+    vertical-align: middle;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+tr:hover td {
+    background-color: #fafafa;
+}
+
+/* Enlaces */
+a {
+    color: #2563eb;
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 20px;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #1d4ed8;
+}
+
+/* Footer */
+footer {
+    margin-top: 50px;
+    font-size: 13px;
+    color: #64748b;
+    text-align: center;
+    border-top: 1px solid #e2e8f0;
+    padding-top: 20px;
+}
+
+/* Mensajes de error */
+.error {
+    color: #dc2626;
+    font-weight: 500;
+    font-size: 0.9rem;
+}
+
+/* Pequeños ajustes de espaciado */
+br {
+    display: none; /* Ocultamos los <br/> si usamos márgenes */
+}
+
+.form-group {
+    margin-bottom: 18px;
+}
